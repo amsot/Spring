@@ -1,0 +1,25 @@
+{{>layout/header}}
+<div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">title</th>
+            <th scope="col">content</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#article}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{title}}</td>
+            <td>{{content}}</td>
+        </tr>
+        {{/article}}
+        </tbody>
+    </table>
+    <a href="/articles/{{article.id}}/edit">edit</a>
+    <a href="/article/delete/{{article.id}}">delete</a>
+    <a href="/articles">index</a>
+</div>
+{{>layout/footer}}

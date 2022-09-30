@@ -1,0 +1,17 @@
+{{>layout/header}}
+<div>
+{{#article}}
+<form action="/article/update/{{id}}" method="post">
+    <input type="hidden" name="_method" value="put">
+
+    <input type="hidden" name="id" value="{{id}}">
+    <input type="text" name="title" value="{{title}}">
+    <textarea name="content" >{{content}}</textarea>
+    <button type="submit">제출</button>
+    <a href="/articles/{{id}}">back</a>
+
+</form>
+{{/article}}
+</div>
+
+{{>layout/footer}}

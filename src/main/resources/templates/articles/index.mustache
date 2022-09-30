@@ -1,0 +1,30 @@
+{{>layout/header}}
+<script>
+
+
+</script>
+<div>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">title</th>
+            <th scope="col">content</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#articleList}}
+        <tr>
+            <td>
+                <a href="/articles/{{id}}">{{id}}</a>
+            </td>
+            <td>{{title}}</td>
+            <td>{{content}}</td>
+        </tr>
+        {{/articleList}}
+        </tbody>
+    </table>
+    <a href="/form/New">New article</a>
+</div>
+{{>layout/footer}}

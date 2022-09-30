@@ -1,0 +1,4 @@
+INSERT INTO ARTICLE (id, title, content) VALUES ( 1,'test1','1111111');
+INSERT INTO ARTICLE (id, title, content) VALUES ( 2,'test2','2222222');
+INSERT INTO ARTICLE (id, title, content) VALUES ( 3,'test3','3333333');
+
